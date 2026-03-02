@@ -1,0 +1,156 @@
+{
+  "projectType": "saas",
+  "projectName": "waoowaoo",
+  "projectDescription": "Industry-first professional AI Agent platform for controllable film and video production, from shorts to live-action with Hollywood-standard workflows.",
+  "theme": "aspen",
+  "primaryColor": "#8AAAFF",
+  "lightColor": "#94A3B8",
+  "darkColor": "#6366F1",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/workflows",
+              "concepts/ai-agents",
+              "concepts/task-system",
+              "concepts/media-pipeline"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/script-analysis",
+              "features/character-generation",
+              "features/scene-generation",
+              "features/storyboard-creation",
+              "features/voice-synthesis",
+              "features/video-generation",
+              "features/video-editor"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/creating-project",
+              "guides/api-configuration",
+              "guides/novel-to-video",
+              "guides/asset-management",
+              "guides/custom-models"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/architecture",
+              "platform/billing",
+              "platform/task-queue",
+              "platform/media-storage"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Projects",
+            "pages": [
+              "api/projects/create",
+              "api/projects/get",
+              "api/projects/update",
+              "api/projects/delete"
+            ]
+          },
+          {
+            "group": "Episodes",
+            "pages": [
+              "api/episodes/create",
+              "api/episodes/analyze",
+              "api/episodes/storyboard"
+            ]
+          },
+          {
+            "group": "Assets",
+            "pages": [
+              "api/assets/characters",
+              "api/assets/locations",
+              "api/assets/voices"
+            ]
+          },
+          {
+            "group": "Tasks",
+            "pages": [
+              "api/tasks/submit",
+              "api/tasks/status",
+              "api/tasks/events"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Self-Hosting",
+        "groups": [
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/environment-variables",
+              "deployment/database-setup",
+              "deployment/redis-queue"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "config/ai-providers",
+              "config/storage",
+              "config/authentication",
+              "config/scaling"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI script analysis - automatically parse novels, extract characters, scenes, and plot structure",
+    "Character & scene generation - AI-generated consistent character appearances and scene images",
+    "Storyboard video production - automated shot generation and video composition",
+    "Multi-character AI voiceover - voice synthesis with emotion and character matching",
+    "Task queue system - BullMQ-based asynchronous task processing with retry logic",
+    "Billing & usage tracking - real-time cost tracking per AI model and action",
+    "Asset management - global character, location, and voice library",
+    "Video editor integration - built-in timeline editor for final video assembly"
+  ],
+  "publicApiSurface": [
+    "POST /api/projects - Create new film project",
+    "POST /api/novel-promotion/analyze-novel - Analyze novel text and extract structure",
+    "POST /api/novel-promotion/build-storyboard - Generate storyboard from screenplay",
+    "POST /api/novel-promotion/generate-voice - Synthesize character voiceovers",
+    "POST /api/asset-hub/characters - Manage character assets",
+    "POST /api/asset-hub/locations - Manage scene/location assets",
+    "GET /api/tasks/events - Stream task progress events (SSE)",
+    "POST /api/user/api-config - Configure AI provider API keys",
+    "Task system - image, text, video, voice worker queues",
+    "GraphRun workflow engine - multi-step AI workflow orchestration"
+  ]
+}
